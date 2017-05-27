@@ -7,6 +7,7 @@
   <title>Blueprint: Responsive Content Slider</title>
   <link rel="stylesheet" href="css/default.css">
   <link rel="stylesheet" href="css/component.css">
+  <script src="js/modernizr.custom.js"></script>
 </head>
 <body>
   <div class="container">
@@ -28,7 +29,7 @@
       </nav>
     </header>
     <main>
-      <div class="cbp-contentslider">
+      <div id="cbp-contentslider" class="cbp-contentslider">
         <ul>
           <li id="slide1">
             <h3 class="icon-wolf">Wolf</h3>
@@ -44,7 +45,7 @@
             </div>
           </li>
           <li id="slide2">
-            <h3 clas="icon-rabbit">Rabbit</h3>
+            <h3 class="icon-rabbit">Rabbit</h3>
             <div>
               <div class="cbp-content">
                 <p>
@@ -112,5 +113,12 @@
       </div>
     </main>
   </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="js/jquery.cbpContentSlider.js"></script>
+  <script>
+    $(function () {
+      $('#cbp-contentslider').cbpContentSlider();
+    });
+  </script>
 </body>
 </html>
