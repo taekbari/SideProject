@@ -7,6 +7,7 @@
   <title>Blueprint: Horizontal Drop-Down Menu</title>
   <link rel="stylesheet" href="css/default.css">
   <link rel="stylesheet" href="css/component.css">
+  <script src="js/modernizr.custom.js"></script>
 </head>
 <body>
   <div class="container">
@@ -216,5 +217,12 @@
       </nav>
     </main>
   </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="js/cbpHorizontalMenu.js"></script>
+  <script>
+    $(function() {
+      cbpHorizontalMenu.init();
+    });
+  </script>
 </body>
 </html>
