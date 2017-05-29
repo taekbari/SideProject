@@ -1,0 +1,81 @@
+.cbp-hrmenu {
+  width: 100%;
+  border-bottom: 4px solid #47a3da;
+  margin-top: 2em;
+}
+
+.cbp-hrmenu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.cbp-hrmenu > ul,
+.cbp-hrmenu .cbp-hrsub-inner {
+  width: 90%;
+  max-width: 70em;
+  padding: 0 1.875em;
+  margin: 0 auto;
+}
+
+.cbp-hrmenu > ul > li {
+  display: inline-block;
+}
+
+.cbp-hrmenu > ul > li > a {
+  display: inline-block;
+  padding: 1em 2em;
+  font-weight: 700;
+  color: #999;
+}
+
+.cbp-hrmenu > ul > li > a:hover {
+  color: #47a3da;
+}
+
+.cbp-hrmenu > ul > li.cbp-hropen a,
+.cbp-hrmenu > ul > li.cbp-hropen > a:hover {
+  color: #fff;
+  background: #47a3da;
+}
+
+.cbp-hrmenu .cbp-hrsub {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background: #47a3da;
+}
+
+.cbp-hropen .cbp-hrsub {
+  display: block;
+  padding-bottom: 3em;
+}
+
+.cbp-hrmenu .cbp-hrsub-inner > div {
+  float: left;
+  width: 33%;
+  padding: 0 2em 0;
+}
+
+.cbp-hrmenu .cbp-hrsub-inner::before,
+.cbp-hrmenu .cbp-hrsub-inner::after {
+  content: ' ';
+  display: table;
+}
+
+.cbp-hrmenu .cbp-hrsub-inner::after {
+  clear: both;
+}
+
+.cbp-hrmenu .cbp-hrsub-inner > div a {
+  line-height: 2em;
+}
+
+.cbp-hrsub h4 {
+  padding: 2em 0 0.6em;
+  margin: 0;
+  font-size: 160%;
+  font-weight: 300;
+  color: #afdefa;
+}
