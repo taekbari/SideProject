@@ -18,10 +18,6 @@
   opacity: 0;
 }
 
-.cbp-qtrotator .cbp-qtcontent:first-child {
-  opacity: 1;
-}
-
 .no-js .cbp-qtrotator .cbp-qtcontent {
   border-bottom: none;
 }
@@ -76,4 +72,14 @@
 .cbp-qtrotator .cbp-qtcontent img {
   float: right;
   margin-left: 3em;
+}
+
+@media screen and (max-width: 30.6em) {
+  .cbp-qtrotator {
+    font-size: 70%;
+  }
+
+  .cbp-qtrotator img {
+    width: 80px;
+  }
 }

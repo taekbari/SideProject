@@ -7,6 +7,7 @@
   <title>Blueprint: Quotes Rotator</title>
   <link rel="stylesheet" href="css/default.css">
   <link rel="stylesheet" href="css/component.css">
+  <script src="js/modernizr.custom.js"></script>
 </head>
 <body>
   <div class="container">
@@ -51,5 +52,12 @@
       </div>
     </main>
   </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="js/jquery.cbpQTRotator.js"></script>
+  <script>
+    $(function () {
+      $('#cbp-qtrotator').cbpQTRotator();
+    });
+  </script>
 </body>
 </html>
