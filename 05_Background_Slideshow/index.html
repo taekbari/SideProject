@@ -7,6 +7,7 @@
   <title>Blueprint: Background Slideshow</title>
   <link rel="stylesheet" href="css/default.css">
   <link rel="stylesheet" href="css/component.css">
+  <script src="js/modernizr.custom.js"></script>
 </head>
 <body>
   <div class="container">
@@ -19,7 +20,7 @@
       </nav>
     </header>
     <main>
-      <ul class="cbp-bislideshow">
+      <ul id="cbp-bislideshow" class="cbp-bislideshow">
         <li><img src="images/1.jpg" alt="image01"></li>
         <li><img src="images/2.jpg" alt="image02"></li>
         <li><img src="images/3.jpg" alt="image03"></li>
@@ -27,12 +28,20 @@
         <li><img src="images/5.jpg" alt="image05"></li>
         <li><img src="images/6.jpg" alt="image06"></li>
       </ul>
-      <div class="cbp-bicontrols">
+      <div id="cbp-bicontrols" class="cbp-bicontrols">
         <a href="#" class="cbp-biprev"></a>
         <a href="#" class="cbp-bipause"></a>
         <a href="#" class="cbp-binext"></a>
       </div>
     </main>
   </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="js/jquery.imagesloaded.min.js"></script>
+  <script src="js/cbpBGSlideshow.js"></script>
+  <script>
+    $(function () {
+      cbpBGSlideshow.init();
+    });
+  </script>
 </body>
 </html>
