@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Four Boxes Slideshow | Demo 1</title>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:200,400,600">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/demo.css">
+  <link rel="stylesheet" href="css/component.css">
+  <script src="js/modernizr.custom.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="codrops-top cleafix">
+      <a href="http://tympanus.net/Development/InlineAnchorStyles/" class="codrops-icon codrops-icon-prev"><span>Previous Demo</span></a>
+      <a href="http://tympanus.net/codrops/?p=19242" class="codrops-icon codrops-icon-drop"><span>Back to the Codrops Article</span></a>
+    </div>
+    <div id="boxgallery" class="boxgallery" data-effect="effect-3">
+      <div class="panel">
+        <img src="img/2.jpg" alt="Image 2">
+      </div>
+      <div class="panel">
+        <img src="img/3.jpg" alt="Image 3">
+      </div>
+      <div class="panel">
+        <img src="img/1.jpg" alt="Image 1">
+      </div>
+      <div class="panel">
+        <img src="img/4.jpg" alt="Image 4">
+      </div>
+    </div>
+    <header class="codrops-header">
+      <h1>Four Boxes Slideshow <span>Recreating the background image slideshow seen on <a href="http://www.atelier-serge-thoraval.com/en/">Atelier Serge Thoroval's website</a></span></h1>
+      <nav class="codrops-demos">
+        <a href="index.html">Serge Thoroval</a>
+        <a href="index2.html">Lateral</a>
+        <a href="index3.html" class="current-demo">Fall</a>
+      </nav>
+    </header>
+  </div>
+  <script src="js/classie.js"></script>
+  <script src="js/boxesFx.js"></script>
+  <script>
+    new BoxesFx(document.getElementById('boxgallery'));
+  </script>
+</body>
+</html>

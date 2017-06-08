@@ -100,8 +100,35 @@
           'translate3d(0, ' + (win.height / 2 + 10) + 'px, 0)',
           'translate3d(0, -' + (win.height / 2 + 10) + 'px, 0)',
           'translate3d(-' + (win.width / 2 + 10) + 'px, 0, 0)'
+        ]
+      },
+      'effect-2' : {
+        'next' : [
+          'translate3d(-' + (win.width / 2 + 10) + 'px, 0, 0)',
+          'translate3d(' + (win.width / 2 + 10) + 'px, 0, 0)',
+          'translate3d(-' + (win.width / 2 + 10) + 'px, 0, 0)',
+          'translate3d(' + (win.width / 2 + 10) + 'px, 0, 0)'
         ],
-
+        'prev' : [
+          'translate3d(0, -' + (win.width / 2 + 10) + 'px, 0)',
+          'translate3d(0, -' + (win.width / 2 + 10) + 'px, 0)',
+          'translate3d(0, ' + (win.width / 2 + 10) + 'px, 0)',
+          'translate3d(0, ' + (win.width / 2 + 10) + 'px, 0)'
+        ]
+      },
+      'effect-3' : {
+        'next' : [
+          'translate3d(0, ' + (win.width / 2 + 10) + 'px, 0)',
+          'translate3d(0, ' + (win.width / 2 + 10) + 'px, 0)',
+          'translate3d(0, ' + (win.width / 2 + 10) + 'px, 0)',
+          'translate3d(0, ' + (win.width / 2 + 10) + 'px, 0)'
+        ],
+        'prev' : [
+          'translate3d(0, -' + (win.width / 2 + 10) + 'px, 0)',
+          'translate3d(0, -' + (win.width / 2 + 10) + 'px, 0)',
+          'translate3d(0, -' + (win.width / 2 + 10) + 'px, 0)',
+          'translate3d(0, -' + (win.width / 2 + 10) + 'px, 0)'
+        ]
       }
     };
   };
