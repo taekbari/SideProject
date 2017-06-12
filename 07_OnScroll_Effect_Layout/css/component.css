@@ -1,0 +1,67 @@
+.cbp-so-scroller {
+  margin-top: 3em;
+  overflow: hidden;
+}
+
+.cbp-so-section {
+  margin-bottom: 15em;
+}
+
+.cbp-so-section h2 {
+  font-size: 5em;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.cbp-so-section p {
+  font-size: 2em;
+  font-weight: 300;
+}
+
+.cbp-so-side {
+  float: left;
+  width: 50%;
+  min-height: 12em;
+  padding: 3em 4%;
+  margin: 0;
+  overflow: hidden;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.cbp-so-side-right {
+  text-align: left;
+}
+
+.cbp-so-side-left {
+  text-align: right;
+}
+
+.cbp-so-side-right img {
+  float: left;
+}
+
+.cbp-so-side-left img {
+  float: right;
+}
+
+article.cbp-so-side-right {
+  float: right;
+}
+
+.cbp-so-init .cbp-so-side {
+  opacity: 0;
+}
+
+.cbp-so-init .cbp-so-side-left {
+  transform: translateX(-80px);
+}
+
+.cbp-so-init .cbp-so-side-right {
+  transform: translateX(80px);
+}
+
+.cbp-so-section.cbp-so-animate .cbp-so-side-left,
+.cbp-so-section.cbp-so-animate .cbp-so-side-right {
+  transform: translateX(0px);
+  opacity: 1;
+}
