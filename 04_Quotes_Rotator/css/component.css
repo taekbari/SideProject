@@ -1,0 +1,85 @@
+.cbp-qtrotator {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  min-height: 400px;
+  margin: 3em auto 5em;
+}
+
+.cbp-qtrotator .cbp-qtcontent {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  min-height: 200px;
+  padding: 2em 0;
+  border-top: 1px solid #f4f4f4;
+  border-bottom: 1px solid #f4f4f4;
+  z-index: 0;
+  opacity: 0;
+}
+
+.no-js .cbp-qtrotator .cbp-qtcontent {
+  border-bottom: none;
+}
+
+.cbp-qtrotator .cbp-qtcontent.cbp-qtcurrent,
+.no-js .cbp-qtrotator .cbp-qtcontent {
+  position: relative;
+  z-index: 100;
+  opacity: 1;
+  pointer-events: none;
+}
+
+.cbp-qtrotator .cbp-qtcontent::before,
+.cbp-qtrotator .cbp-qtcontent::after {
+  content: ' ';
+  display: table;
+}
+
+.cbp-qtrotator .cbp-qtcontent::after {
+  clear: both;
+}
+
+.cbp-qtprogress {
+  position: absolute;
+  top: 0;
+  width: 0%;
+  height: 1px;
+  background: #47a3da;
+  z-index: 1000;
+}
+
+.cbp-qtrotator blockquote {
+  padding: 0;
+  margin: 0;
+}
+
+.cbp-qtrotator blockquote p {
+  margin: 0.4em 0 1em;
+  font-size: 2em;
+  font-weight: 300;
+  color: #888;
+}
+
+.cbp-qtrotator blockquote footer {
+  font-size: 1.2em;
+}
+
+.cbp-qtrotator blockquote footer::before {
+  content: '― ';
+}
+
+.cbp-qtrotator .cbp-qtcontent img {
+  float: right;
+  margin-left: 3em;
+}
+
+@media screen and (max-width: 30.6em) {
+  .cbp-qtrotator {
+    font-size: 70%;
+  }
+
+  .cbp-qtrotator img {
+    width: 80px;
+  }
+}

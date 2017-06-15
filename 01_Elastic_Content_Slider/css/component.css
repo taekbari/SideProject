@@ -1,0 +1,252 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot');
+  src: url('../fonts/icomoon.eot?#iefix')
+  format('embedded-opentype'),
+    url('../fonts/icomoon.svg#icomoon') format('svg'),
+    url('../fonts/icomoon.woff') format('woff'),
+    url('../fonts/icomoon.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body,
+.container,
+main {
+  height: 100%;
+}
+
+.cbp-contentslider {
+  position: relative;
+  width: 100%;
+  height: 70%;
+  border: 4px solid #47a3da;
+  margin: 1em auto;
+}
+
+.cbp-contentslider > ul {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.cbp-contentslider > ul li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+  background: #fff;
+}
+
+.cbp-contentslider > ul li:target {
+  z-index: 100;
+}
+
+.cbp-contentslider nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3.313em;
+  border-top: 4px solid #47a3da;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.cbp-contentslider nav ul {
+  height: 100%;
+}
+
+.cbp-contentslider nav li {
+  float: left;
+  position: relative;
+  width: 20%;
+  height: 100%;
+}
+
+.cbp-contentslider nav a {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-left: 3.125em;
+  border-right: 4px solid #47a3da;
+  outline: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #47a3da;
+  letter-spacing: 0.1em;
+  line-height: 3;
+  background: #fff;
+  overflow: hidden;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.cbp-contentslider nav a span {
+  display: block;
+}
+
+.cbp-contentslider nav li:last-child a {
+  border: none;
+  box-shadow: 1px 0 #47a3da;
+}
+
+.cbp-contentslider nav a:hover,
+.cbp-contentslider nav a.rc-active {
+  color: #fff;
+  background-color: #47a3da;
+}
+
+.cbp-contentslider [class*="icon-"]::before {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  margin: -1.250em 0 0 0;
+  width: 2.5em;
+  height: 2.5em;
+  font-family: 'icomoon';
+  font-size: 2em;
+  font-style: normal;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.1);
+  text-align: center;
+  line-height: 2.5;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+.cbp-contentslider .icon-wolf::before {
+  content: '\56';
+}
+
+.cbp-contentslider .icon-rabbit::before {
+  content: '\52';
+}
+
+.cbp-contentslider .icon-turtle::before {
+  content: '\54';
+}
+
+.cbp-contentslider .icon-platypus::before {
+  content: '\42';
+}
+
+.cbp-contentslider .icon-aligator::before {
+  content: '\41';
+}
+
+.cbp-contentslider nav a:hover::before,
+.cbp-contentslider [class*="icon-"].rc-active::before {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.cbp-contentslider h3 {
+  position: relative;
+  height: 2em;
+  padding: 0 0.2em 0 0;
+  border-bottom: 4px solid #47a3da;
+  margin: 0 0 0.3em;
+  font-size: 4em;
+  font-weight: 300;
+  color: #47a3da;
+  text-transform: uppercase;
+  text-align: right;
+  letter-spacing: 0.3em;
+  line-height: 1.7;
+}
+
+.cbp-contentslider h3[class*="icon-"]::before {
+  top: 0;
+  left: 0;
+  width: 2em;
+  height: 1.2em;
+  margin: 0;
+  color: #47a3da;
+  line-height: 1;
+}
+
+.cbp-contentslider li > div {
+  position: absolute;
+  top: 9em;
+  left: 0;
+  bottom: 3.313em;
+  width: 100%;
+  padding: 0 1em;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.cbp-contentslider .cbp-content {
+  column-rule: 1px dashed #47a3da;
+  column-count: 2;
+  column-gap: 1em;
+  vertical-align: top;
+  padding: 1em 0;
+}
+
+.cbp-contentslider p {
+  padding: 0 0.5em 0.4em;
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: 300;
+  color: #47a3da;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 70em) {
+  .cbp-contentslider p {
+    font-size: 100%;
+  }
+}
+
+@media screen and (max-width: 67.75em) {
+  .cbp-contentslider {
+    font-size: 85%;
+  }
+
+  .cbp-contentslider nav a[class*="icon-"]::before {
+    left: 50%;
+    margin-left: -1.250em;
+  }
+
+  .cbp-contentslider nav a span {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 43em) {
+  .cbp-contentslider h3 {
+    font-size: 2em;
+  }
+
+  .cbp-contentslider .cbp-content {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    -o-column-count: 1;
+    column-count: 1;
+  }
+
+  .cbp-contentslider li > div {
+    top: 5em;
+  }
+}
+
+@media screen and (max-width: 25em) {
+  .cbp-contentslider nav a {
+    padding: 0;
+  }
+
+  .cbp-contentslider h3[class*="icon-"]::before {
+    display: none;
+  }
+}

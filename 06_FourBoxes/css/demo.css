@@ -1,0 +1,136 @@
+@font-face {
+  font-family: 'codropsicons';
+  src: url('../fonts/codropsicons/codropsicons.eot');
+  src: url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg'),
+    url('../fonts/codropsicons/codropsicons.woff') format('woff'),
+    url('../fonts/codropsicons/codropsicons.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: '';
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+body {
+  font-family: 'Raleway', 'Arial', sans-serif;
+  font-size: 1em;
+  font-weight: 200;
+  color: #fff;
+  background: #333;
+}
+
+a {
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  outline: none;
+}
+
+a:hover,
+a:focus {
+  color: #debcc3;
+}
+
+.codrops-header {
+  position: absolute;;
+  top: 50%;
+  left: 50%;
+  max-width: 500px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1000;
+  backface-visibility: hidden;
+}
+
+.codrops-header h1 {
+  margin: 0;
+  font-size: 3em;
+  font-weight: 200;
+  line-height: 1;
+}
+
+.codrops-header h1 span {
+  display: block;
+  padding: 0.5em 0 0.6em 0.1em;
+  font-size: 40%;
+  line-height: 1.2;
+  opacity: 0.7;
+}
+
+.codrops-top {
+  position: relative;
+  width: 100%;
+  font-size: 0.69em;
+  font-weight: 400;
+  line-height: 2.2;
+  text-transform: uppercase;
+  z-index: 2000;
+}
+
+.codrops-top a {
+  display: inline-block;
+  padding: 0.3em 0.7em;
+  margin: 5px;
+  letter-spacing: 1px;
+}
+
+.codrops-icon.codrops-icon-drop {
+  float: right;
+}
+
+.codrops-icon::before {
+  margin: 0 4px;
+  font-family: 'codropsicons';
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+.codrops-icon-drop::before {
+  content: "\e001";
+}
+
+.codrops-icon-prev::before {
+  content: "\e004";
+}
+
+.codrops-demos {
+  padding-top: 2em;
+  font-size: 0.8em;
+}
+
+.codrops-demos a {
+  display: inline-block;
+  width: 165px;
+  padding: 0.7em 1.1em;
+  border: 2px solid #fff;
+  margin: 0.5em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  outline: none;
+}
+
+.codrops-demos a:hover,
+.codrops-demos a.current-demo,
+.codrops-demos a.current-demo:hover {
+  border-color: #debcc3;
+  color: #debcc3;
+}
