@@ -1,0 +1,101 @@
+nav a {
+  display: block;
+  position: absolute;
+  top: 50%;
+  text-align: left;
+  z-index: 1000;
+  transform: translateY(-50%);
+}
+
+nav a.prev {
+  left: 0;
+}
+
+nav a.next {
+  right: 0;
+}
+
+nav a svg {
+  display: block;
+  padding: 0;
+  margin: 0 auto;
+}
+
+/* Individual styles */
+/*-------------------*/
+/* Slide out */
+/*-------------------*/
+
+.color-1 {
+  background: #bdc3c7;
+}
+
+.nav-slide .icon-wrap {
+  display: block;
+  position: relative;
+  padding: 20px;
+  background: #fff;
+  z-index: 100;
+}
+
+.nav-slide svg.icon {
+  fill: #34495e;
+}
+
+.nav-slide div {
+  position: absolute;
+  top: 50%;
+  padding: 0 100px;
+  background-color: #34495e;
+  transition: transform 0.3s;
+}
+
+.nav-slide a.prev div {
+  left: 0;
+  padding-right: 120px;
+  transform: translate(-100%, -50%);
+}
+
+.nav-slide a.next div {
+  right: 0;
+  padding-left: 120px;
+  text-align: right;
+  transform: translate(100%, -50%);
+}
+
+.nav-slide h3 {
+  position: relative;
+  padding: 20px 0;
+  margin: 0;
+  font-weight: 300;
+  font-size: 1.3em;
+  color: #fff;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.nav-slide div h3 span {
+  display: block;
+  font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;
+  font-style: italic;
+  font-size: 65%;
+  color: #95a5a6;
+}
+
+.nav-slide img {
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+
+.nav-slide a.prev img {
+  right: 0;
+}
+
+.nav-slide a.next img {
+  left: 0;
+}
+
+.nav-slide a:hover div {
+  transform: translate(0, -50%);
+}
