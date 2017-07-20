@@ -99,3 +99,73 @@ nav a svg {
 .nav-slide a:hover div {
   transform: translate(0, -50%);
 }
+
+/*-------------------*/
+/* Image Bar */
+/*-------------------*/
+
+.color-2 {
+  background: #34495e;
+}
+
+.nav-imgbar a {
+  width: 100px;
+  height: 90%;
+  background-color: transparent;
+  transition: background-color 0.3s;
+  overflow: hidden;
+}
+
+.nav-imgbar .icon-wrap {
+  display: block;
+  position: relative;
+  top: 50%;
+  padding: 30px;
+  margin: 0 auto;
+  z-index: 100;
+  transition: transform 0.3s;
+}
+
+.nav-imgbar a.prev .icon-wrap {
+  transform: translate(10px, -50%);
+}
+
+.nav-imgbar a.next .icon-wrap {
+  transform: translate(-10px, -50%);
+}
+
+.nav-imgbar svg.icon {
+  fill: #fff;
+}
+
+.nav-imgbar img {
+  position: absolute;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.nav-imgbar a.prev img {
+  left: 0;
+  transform: translateX(100%);
+}
+
+.nav-imgbar a.next img {
+  right: 0;
+  transform: translateX(-100%);
+}
+
+.nav-imgbar a:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.nav-imgbar a:hover .icon-wrap {
+  transform: translate(0, -50%);
+}
+
+.nav-imgbar a:hover img {
+  opacity: 0.6;
+  transform: translateX(0);
+}
