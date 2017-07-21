@@ -38,9 +38,16 @@ Path의 모양은 `d`로 정의된다. `d` 속성은 여러 개의 명령어와 
 
 `<g>`, `<svg>` 그리고 `<symbol>` 요소는 물론 다른 `<use>` 요소를 포함한 그래픽 SVG 요소를 복사하고 다시 사용할 수 있도록 하는 요소이다.  
 
+### `perspective-origin`  
+
+뷰어가 보여지는 위치를 결정하는 속성. `perspective` 속성에 의해 소실점으로 사용된다. 즉, `perspective-origin` 속성만 사용할 경우, 아무 효과가 나타나지 않는다.  
+
+> 소실점 (vanishing point) : 우리가 사는 물리세계에서는 서로 평행한 두 직선은 영원히 만나지 않는다. 하지만 카메라 영상에서는 평행한 직선도 만날 수 있으며 교점의 좌표도 구할 수 있다. 이 교점을 소실점이라고 한다.  
+
 ---  
 
 ### 참고 사이트  
 
 * [SVG 시작하기#1](https://brunch.co.kr/@kkak10/3)  
 * [Paths](https://developer.mozilla.org/ko/docs/Web/SVG/Tutorial/Paths)  
+* [perspective-origin on MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/perspective-origin)
