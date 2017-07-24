@@ -38,6 +38,15 @@ Path의 모양은 `d`로 정의된다. `d` 속성은 여러 개의 명령어와 
 
 `<g>`, `<svg>` 그리고 `<symbol>` 요소는 물론 다른 `<use>` 요소를 포함한 그래픽 SVG 요소를 복사하고 다시 사용할 수 있도록 하는 요소이다.  
 
+#### `stroke` 속성  
+
+SVG에서 제공하는 선긋기 속성으로 SVG 코드 또는 CSS 파일 내에서 설정이 가능하다.  
+
+> `stroke` : 선의 색상을 결정하는 속성  
+> `stroke-width` : 선의 두께를 결정하는 속성  
+> `stroke-linecap` : 선의 끝모양을 결정하는 속성으로 `butt`, `round`, `squre` 속성값을 갖는다.  
+> `stroke-dasharray` : 점선을 표현할 때 사용하는 속성  
+
 ### `perspective-origin`  
 
 뷰어가 보여지는 위치를 결정하는 속성. `perspective` 속성에 의해 소실점으로 사용된다. 즉, `perspective-origin` 속성만 사용할 경우, 아무 효과가 나타나지 않는다.  
@@ -50,4 +59,5 @@ Path의 모양은 `d`로 정의된다. `d` 속성은 여러 개의 명령어와 
 
 * [SVG 시작하기#1](https://brunch.co.kr/@kkak10/3)  
 * [Paths](https://developer.mozilla.org/ko/docs/Web/SVG/Tutorial/Paths)  
+* [SVG Stroke Properties](https://www.w3schools.com/graphics/svg_stroking.asp)  
 * [perspective-origin on MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/perspective-origin)

@@ -965,3 +965,302 @@ nav a svg {
   transform: translate(0, -50%) scale(1);
   transition-delay: 0.3s;
 }
+
+/*--------------------*/
+/* Diamond */
+/*--------------------*/
+
+.nav-diamond a {
+  margin: 0 30px;
+}
+
+.nav-diamond .icon-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+.nav-diamond svg.icon {
+  position: relative;
+  top: 50%;
+  fill: #fff;
+  stroke-width: 2;
+  stroke: #fff;
+  transform: translateY(-50%);
+}
+
+.nav-diamond div {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  background: #34495e;
+  overflow: hidden;
+  transform: scale(0.6);
+  transition: transform 0.3s;
+}
+
+.nav-diamond img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.nav-diamond a.prev img {
+  transform: translate(-50%, -50%) rotate(45deg) scale(2);
+}
+
+.nav-diamond a.next img {
+  transform: translate(-50%, -50%) rotate(-45deg) scale(2);
+}
+
+.nav-diamond a:hover div {
+  transform: scale(1) rotate(-45deg);
+}
+
+.nav-diamond a.next:hover div {
+  transform: scale(1) rotate(45deg);
+}
+
+.nav-diamond a:hover img {
+  opacity: 1;
+}
+
+.nav-diamond a.prev:hover img {
+  transform: translate(-50%, -50%) rotate(45deg) scale(1);
+}
+
+.nav-diamond a.next:hover img {
+  transform: translate(-50%, -50%) rotate(-45deg) scale(1);
+}
+
+/*--------------------*/
+/* Fill Slide */
+/*--------------------*/
+
+.color-10 {
+  background-color: #dcc6e0;
+}
+
+.nav-fillslide .icon-wrap {
+  display: block;
+  position: relative;
+  padding: 65px 10px;
+  background: #b68dbe;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.nav-fillslide .icon-wrap:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110%;
+  background: #fff;
+  transition: transform 0.3s 0.3s;
+}
+
+.nav-fillslide a.prev .icon-wrap:before {
+  transform: translateX(-100%);
+}
+
+.nav-fillslide a.next .icon-wrap:before {
+  transform: translateX(100%);
+}
+
+.nav-fillslide svg.icon {
+  position: relative;
+  fill: #736176;
+  z-index: 100;
+}
+
+.nav-fillslide div {
+  position: absolute;
+  top: 0;
+  width: 440px;
+  height: 154px;
+  padding: 20px;
+  background: #fff;
+  transition: transform 0.3s;
+}
+
+.nav-fillslide a.prev div {
+  left: 0;
+  padding: 20px 150px 20px 70px;
+  border-radius: 0 6px 6px 0;
+  text-align: right;
+  transform: translateX(-100%);
+}
+
+.nav-fillslide a.next div {
+  right: 0;
+  padding: 20px 70px 20px 150px;
+  border-radius: 6px 0 0 6px;
+  transform: translateX(100%);
+}
+
+.nav-fillslide div span {
+  display: inline-block;
+  padding: 5px;
+  border-top: 1px solid #d8cfda;
+  font-weight: 400;
+  font-size: 0.7em;
+  color: #d0c2d3;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nav-fillslide h3 {
+  padding: 8px 0 10px;
+  margin: 0;
+  font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 1.35em;
+  color: #736176;
+  line-height: 1.2;
+}
+
+.nav-fillslide img {
+  position: absolute;
+  top: 20px;
+  border: 5px solid #736176;
+}
+
+.nav-fillslide a.prev img {
+  right: 20px;
+}
+
+.nav-fillslide a.next img {
+  left: 20px;
+}
+
+.nav-fillslide a:hover .icon-wrap:before {
+  transform: translateX(0);
+  transition-delay: 0s;
+}
+
+.nav-fillslide a:hover div {
+  transform: translateX(0);
+  transition-delay: 0.3s;
+}
+
+/*--------------------*/
+/* Fillpath (http://www.nizuka.fr/)*/
+/*--------------------*/
+
+.nav-fillpath a {
+  width: 100px;
+  height: 100px;
+}
+
+.nav-fillpath .icon-wrap {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.nav-fillpath a:before,
+.nav-fillpath a:after,
+.nav-fillpath .icon-wrap:before,
+.nav-fillpath .icon-wrap:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  width: 3px;
+  height: 50%;
+  background: #566475;
+  transition: transform 0.3s;
+}
+
+.nav-fillpath .icon-wrap:before,
+.nav-fillpath .icon-wrap:after {
+  height: 0;
+  background: #fff;
+  z-index: 100;
+  transition: height 0.3s, transform 0.3s;
+}
+
+.nav-fillpath a:before,
+.nav-fillpath .icon-wrap:before {
+  top: 50%;
+  transform: translateX(-50%) rotate(-135deg);
+  transform-origin: 50% 0;
+}
+
+.nav-fillpath a.next:before,
+.nav-fillpath a.next .icon-wrap:before {
+  transform: translateX(-50%) rotate(135deg);
+  transform-origin: 50% 0%;
+}
+
+.nav-fillpath a:after,
+.nav-fillpath .icon-wrap:after {
+  top: 50%;
+  transform: translateX(-50%) rotate(-45deg);
+  transform-origin: 0 0;
+}
+
+.nav-fillpath a.next:after,
+.nav-fillpath a.next .icon-wrap:after {
+  transform: translateX(-50%) rotate(45deg);
+  transform-origin: 100% 0%;
+}
+
+.nav-fillpath h3 {
+  position: absolute;
+  top: 50%;
+  margin: 0;
+  font-weight: 300;
+  font-size: 0.85em;
+  color: #fff;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.nav-fillpath a.prev h3 {
+  left: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.nav-fillpath a.next h3 {
+  right: 100%;
+  text-align: right;
+  transform: translate(50%, -50%);
+}
+
+.nav-fillpath a:hover .icon-wrap:before,
+.nav-fillpath a:hover .icon-wrap:after {
+  height: 50%;
+}
+
+.nav-fillpath a:hover:before,
+.nav-fillpath a:hover .icon-wrap:before {
+  transform: translateX(-50%) rotate(-125deg);
+}
+
+.nav-fillpath a.next:hover:before,
+.nav-fillpath a.next:hover .icon-wrap:before {
+  transform: translateX(-50%) rotate(125deg);
+}
+
+.nav-fillpath a:hover:after,
+.nav-fillpath a:hover .icon-wrap:after {
+  transform: translateX(-50%) rotate(-55deg);
+}
+
+.nav-fillpath a.next:hover:after,
+.nav-fillpath a.next .icon-wrap:after {
+  transform: translateX(-50%) rotate(55deg);
+}
+
+.nav-fillpath a:hover h3 {
+  opacity: 1;
+  transform: translate(0, -50%);
+}
